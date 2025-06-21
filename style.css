@@ -112,3 +112,13 @@ body.dark .toggle-theme {
   background: #333;
   color: #fff;
 }
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* space between buttons */
+  margin-top: 1em;
+}
+
+.button, .toggle-theme {
+  width: max-content; /* shrink to content */
+}
