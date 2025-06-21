@@ -122,3 +122,11 @@ body.dark .toggle-theme {
 .button, .toggle-theme {
   width: max-content; /* shrink to content */
 }
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* space between the two buttons */
+  margin-top: 1em;
+}
