@@ -86,3 +86,29 @@ footer {
   padding-top: 1rem;
   border-top: 1px solid #dee2e6;
 }
+body.dark {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark a {
+  color: #90cdf4;
+}
+
+body.dark .grid li {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.toggle-theme {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  background: #eee;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+body.dark .toggle-theme {
+  background: #333;
+  color: #fff;
+}
