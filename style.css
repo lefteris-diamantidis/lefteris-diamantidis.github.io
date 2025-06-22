@@ -146,18 +146,40 @@ body.dark .toggle-theme {
   color: #666;
 }
 
-.button {
-  display: inline-block;
+.github-button-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.6rem 1.2rem;
-  background-color: #0077b5;
-  color: white;
+  background-color: #24292e;
+  color: #ffffff;
   border: none;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
+  font-size: 0.95rem;
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #005f94;
+.github-button:hover {
+  background-color: #3d434a;
+}
+
+.github-button .github-icon {
+  vertical-align: middle;
+}
+
+/* Dark mode override */
+body.dark .github-button {
+  background-color: #f1f1f1;
+  color: #212529;
+}
+
+body.dark .github-button:hover {
+  background-color: #e2e2e2;
 }
