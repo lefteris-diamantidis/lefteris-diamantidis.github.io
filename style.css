@@ -145,3 +145,19 @@ body.dark .toggle-theme {
   font-style: italic;
   color: #666;
 }
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005f94;
+}
