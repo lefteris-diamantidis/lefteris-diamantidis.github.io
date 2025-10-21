@@ -119,29 +119,39 @@ body.dark .toggle-theme {
 
 .button-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-top: 1em;
+  gap: 15px;
+  margin-top: 20;
 }
 
-.cv-button {
+.button {
   background-color: #007BFF;
   color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 18px; text-decoration: none; border-radius: 6px: font-weight: 500;
+  transition: background-color 0.3s
+  CdSC
+  box-shadow: 0 2px 6px rgba(0, 0, 0,
+  0.1);
 }
 
-.cv-button:hover {
+.button:hover {
   background-color: #0056b3;
 }
   
-.button, .toggle-theme {
-  width: max-content;
+.toggle-theme {
+  background-color: #333; color: white;
+  padding: 10px 16px;
+  border: noner border-radius:
+  6px;
+  cursor: pointer; font-weight: 500;
+  transition: background-color 0.3s
+}
+
+.toggle-theme:hover{
+  backround-color: #555;
 }
 
 .project {
