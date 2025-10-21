@@ -125,6 +125,21 @@ body.dark .toggle-theme {
   margin-top: 1em;
 }
 
+.cv-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cv-button:hover {
+  background-color: #0056b3;
+}
+  
 .button, .toggle-theme {
   width: max-content;
 }
