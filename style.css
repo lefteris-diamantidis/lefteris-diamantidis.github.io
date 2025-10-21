@@ -134,11 +134,6 @@ body.dark .toggle-theme {
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #005f94;
-}
-
-
 .project {
   margin-bottom: 1.5rem;
 }
