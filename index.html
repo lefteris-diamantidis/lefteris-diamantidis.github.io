@@ -9,47 +9,25 @@
 </head>
 
 <body>
-  <!-- Navigation Bar -->
+  <!-- NAVIGATION -->
   <nav>
-    <a href="index.html" class="active">About</a>
-    <a href="resume.html">Resume</a>
-    <a href="cv.html">CV</a>
-    <a href="projects.html">Projects</a>
-    <a href="other.html">Other Info</a>
-    <a href="contact.html">Contact</a>
+    <a href="#about" class="active">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#cv">CV</a>
+    <a href="#projects">Projects</a>
+    <a href="#other">Other Info</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Main Content -->
+  <!-- MAIN CONTENT -->
   <div class="container">
     <header>
       <img src="profile_photo.jpg" alt="Eleftherios Diamantidis">
       <h1>Eleftherios Diamantidis</h1>
       <h2>Data Scientist</h2>
-
-      <div class="info-list">
-        <div>
-          <h3>Email</h3>
-          <a href="mailto:lef.diamantidis@gmail.com">lef.diamantidis@gmail.com</a>
-        </div>
-        <div>
-          <h3>Phone</h3>
-          <p>+30 6977237393</p>
-        </div>
-        <div>
-          <h3>Birthday</h3>
-          <p>April 9, 1998</p>
-        </div>
-        <div>
-          <h3>Location</h3>
-          <p>Samos, Greece</p>
-        </div>
-        <div>
-          <h3>Website</h3>
-          <a href="https://moneylytics.streamlit.app/" target="_blank">moneylytics.streamlit.app</a>
-        </div>
-      </div>
     </header>
 
+    <!-- About -->
     <section id="about">
       <h2>About</h2>
       <p>
@@ -57,15 +35,103 @@
         Skilled in Python, Machine Learning, Deep Learning, SQL, and Data Visualization.
         Designs predictive models, automates data processes, and extracts actionable insights aligned with business goals.
       </p>
+
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:lef.diamantidis@gmail.com">lef.diamantidis@gmail.com</a></li>
+        <li><strong>Phone:</strong> +30 6977237393</li>
+        <li><strong>Birthday:</strong> April 9, 1998</li>
+        <li><strong>Location:</strong> Samos, Greece</li>
+        <li><strong>Website:</strong> <a href="https://moneylytics.streamlit.app/">moneylytics.streamlit.app</a></li>
+      </ul>
     </section>
 
-    <section>
-      <a href="resume.html" class="btn">View Resume →</a>
+    <!-- Resume -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <h3>Experience</h3>
+      <p><strong>Accountant Assistant</strong> – Athens, Greece (Aug 2022 – Today)</p>
+      <p>Responsible for document registration, financial statements, and VAT declarations.</p>
+
+      <p><strong>Economist, Consultant – Simbiosis Consultants</strong> – Athens, Greece (Nov 2021 – Jul 2023)</p>
+      <p>Business plans, viability studies, EU Grant Applications, and Digital Marketing.</p>
+
+      <h3>Education</h3>
+      <ul>
+        <li>MSc Data Science and Society – Tilburg University (Aug 2024 – Jun 2025)</li>
+        <li>Pre-Master in Data Science – Tilburg University (Jan 2024 – Jun 2024)</li>
+        <li>BSc Banking & Financial Management – University of Piraeus (Oct 2016 – Jun 2022)</li>
+      </ul>
     </section>
+
+    <!-- CV -->
+    <section id="cv">
+      <h2>CV</h2>
+      <a class="btn" href="CV_Eleftherios_Diamantidis.pdf" download>📄 Download CV</a>
+      <div style="margin-top:20px;">
+        <object data="CV_Eleftherios_Diamantidis.pdf" type="application/pdf" width="100%" height="600">
+          <p>Your browser can't display the CV. <a href="CV_Eleftherios_Diamantidis.pdf">Open in new tab</a>.</p>
+        </object>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <h3>Forecasting Crypto Peaks</h3>
+      <p>Regression-Based Time-Until-New-High (Master Thesis 2025)</p>
+
+      <h3>Driver Distraction Detection</h3>
+      <p>CNN vs Transfer Learning (2025)</p>
+
+      <h3>WFP Supply Chain Optimization</h3>
+      <p>Strategic Solutions for the World Food Programme (2025)</p>
+
+      <a class="btn" href="https://github.com/lefteris-diamantidis" target="_blank">View More on GitHub</a>
+    </section>
+
+    <!-- Other Info -->
+    <section id="other">
+      <h2>Other Information</h2>
+      <h3>Website Creation & Development</h3>
+      <ul>
+        <li><a href="https://asgeraki.gr/">asgeraki.gr</a></li>
+        <li><a href="https://asstabivn.gr/">asstabivn.gr</a></li>
+        <li><a href="https://elaiou-ozein.gr/">elaiou-ozein.gr</a></li>
+        <li><a href="https://choudetsi.gr/">choudetsi.gr</a></li>
+        <li><a href="https://h-gnosi.gr/">h-gnosi.gr</a></li>
+        <li><a href="https://samoshousecare.gr/">samoshousecare.gr</a></li>
+        <li><a href="https://roviesolives.gr/">roviesolives.gr</a></li>
+        <li><a href="https://lagoudairy.gr/">lagoudairy.gr</a></li>
+      </ul>
+
+      <h3 style="margin-top:20px;">Website Design</h3>
+      <ul>
+        <li><a href="https://omadesparagogon.gr/">omadesparagogon.gr</a></li>
+        <li><a href="https://www.facebook.com/deligate.gr">facebook.com/deligate.gr</a></li>
+      </ul>
+
+      <h3 style="margin-top:20px;">Languages</h3>
+      <ul>
+        <li>Greek — Native</li>
+        <li>English — C2 (CPE) & IELTS</li>
+        <li>German — B1</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email — <a href="mailto:lef.diamantidis@gmail.com">lef.diamantidis@gmail.com</a></li>
+        <li>LinkedIn — <a href="https://www.linkedin.com/in/eleftherios-diamantidis/" target="_blank">/in/eleftherios-diamantidis</a></li>
+        <li>GitHub — <a href="https://github.com/lefteris-diamantidis" target="_blank">@lefteris-diamantidis</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© Eleftherios Diamantidis · 2025</p>
+    </footer>
   </div>
-
-  <footer>
-    <p>© Eleftherios Diamantidis · 2025</p>
-  </footer>
 </body>
 </html>
