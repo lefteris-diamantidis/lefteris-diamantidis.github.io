@@ -1,161 +1,169 @@
-/* ============================
-   ELEFTHERIOS DIAMANTIDIS
-   Modern Light One-Page Scroll
-   ============================ */
-
-:root {
-  --bg: #f4f4f4;
-  --box: #ffffff;
-  --text: #1e1e1e;
-  --muted: #555;
-  --accent: #3b82f6;
-  --radius: 14px;
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  scroll-behavior: smooth;
-}
-
-/* ===== BODY ===== */
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
 }
 
-/* ===== NAVIGATION BAR ===== */
-nav {
-  width: 100%;
-  background: var(--box);
-  box-shadow: var(--shadow);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 15px 10px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-radius: 0 0 10px 10px;
-}
-
-nav a {
-  color: var(--muted);
-  text-decoration: none;
-  font-weight: 600;
-  margin: 10px 18px;
-  transition: 0.2s ease;
-}
-
-nav a:hover,
-nav a.active {
-  color: var(--accent);
-}
-
-/* ===== MAIN CONTAINER BOX ===== */
 .container {
-  width: 100%;
-  max-width: 1000px;
-  background: var(--box);
-  box-shadow: var(--shadow);
-  border-radius: var(--radius);
-  margin: 40px 20px;
-  padding: 50px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 header {
   text-align: center;
-  margin-bottom: 40px;
+  padding-bottom: 2rem;
 }
 
 header img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--accent);
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 2rem;
+  margin: 0.2rem 0;
 }
 
-header h2 {
-  font-size: 1.1rem;
-  color: var(--muted);
-  margin-bottom: 15px;
+header p {
+  color: #555;
+  margin: 0.2rem 0 1rem;
 }
 
-/* ===== SECTION STYLES ===== */
+.links a {
+  margin: 0 0.5rem;
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
 section {
-  margin-bottom: 80px;
-  scroll-margin-top: 120px;
+  margin-bottom: 2.5rem;
 }
 
 section h2 {
-  font-size: 1.6rem;
-  color: var(--accent);
-  margin-bottom: 15px;
-}
-
-section p {
-  margin-bottom: 10px;
-  color: var(--muted);
-  line-height: 1.6;
+  font-size: 1.5rem;
+  color: #0056b3;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 ul {
-  margin-left: 20px;
-  margin-top: 10px;
-  color: var(--muted);
+  padding-left: 1.2rem;
+  line-height: 1.6;
 }
 
-.btn {
-  display: inline-block;
-  background-color: var(--accent);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.2s ease;
+ul.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
 }
 
-.btn:hover {
-  background-color: #60a5fa;
+ul.grid li {
+  background: #ffffff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-size: 0.95rem;
 }
 
-/* ===== FOOTER ===== */
 footer {
   text-align: center;
   font-size: 0.9rem;
-  color: var(--muted);
-  margin: 40px 0 20px;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
+  color: #999;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #dee2e6;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-  .container {
-    padding: 30px 20px;
-  }
+/* Dark mode base */
+body.dark {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
 
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
+body.dark a {
+  color: #90cdf4;
+}
 
-  nav a {
-    margin: 8px 10px;
-  }
+body.dark .grid li {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.toggle-theme {
+  width: max-content;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 1em auto 0 auto; /* centers horizontally */
+  width: max-content;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
+
+.project h3 {
+  margin: 0;
+  color: #0056b3;
+  font-size: 1.1rem;
+}
+
+.project .subtitle {
+  margin: 0.2rem 0;
+  font-style: italic;
+  color: #666;
+}
+
+.github-button-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #24292e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #3d434a;
+}
+
+body.dark .github-button {
+  background-color: #f1f1f1;
+  color: #212529;
+}
+
+body.dark .github-button:hover {
+  background-color: #e2e2e2;
+}
+
+.github-button .github-icon {
+  vertical-align: middle;
 }

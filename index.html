@@ -1,137 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eleftherios Diamantidis | Data Scientist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- NAVIGATION -->
-  <nav>
-    <a href="#about" class="active">About</a>
-    <a href="#resume">Resume</a>
-    <a href="#cv">CV</a>
-    <a href="#projects">Projects</a>
-    <a href="#other">Other Info</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- MAIN CONTENT -->
   <div class="container">
     <header>
       <img src="profile_photo.jpg" alt="Eleftherios Diamantidis">
       <h1>Eleftherios Diamantidis</h1>
-      <h2>Data Scientist</h2>
+      <p>Data Scientist</p>
+      <div class="links">
+        <a href="mailto:lkarathan12@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/eleftherios-diamantidis/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/lefteris-diamantidis" target="_blank">GitHub</a>
+      </div>
+      <div class="button-container">
+        <a class="button" href="CV_Eleftherios Diamantidis_EN.pdf" download>📄 Download CV (Enligh Version)</a>
+        <a class="button" href="CV_Eleftherios Diamantidis_GR.pdf" download>📄 Κατέβασμα Βιογραφικού (Ελληνικά)</a>
+        <button class="toggle-theme" onclick="toggleTheme()">🌓 Dark Mode</button>
+      </div>
     </header>
 
-    <!-- About -->
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Dynamic Data professional with strong expertise in Data Science and Analytics.
-        Skilled in Python, Machine Learning, Deep Learning, SQL, and Data Visualization.
-        Designs predictive models, automates data processes, and extracts actionable insights aligned with business goals.
-      </p>
+    <section>
+      <h2>Profile Summary</h2>
+      <p>Dynamic Data professional with strong expertise in Data Science and Analytics. Skilled in Python, Machine Learning, Deep Learning, SQL, and Data Visualization using Python and Power BI. Ability to design and deploy predictive models, automate data processes, and extract actionable insights to support strategic decision-making. Delivers practical, data-driven solutions that align with business objectives.</p>
+    </section>
 
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:lef.diamantidis@gmail.com">lef.diamantidis@gmail.com</a></li>
-        <li><strong>Phone:</strong> +30 6977237393</li>
-        <li><strong>Birthday:</strong> April 9, 1998</li>
-        <li><strong>Location:</strong> Samos, Greece</li>
-        <li><strong>Website:</strong> <a href="https://moneylytics.streamlit.app/">moneylytics.streamlit.app</a></li>
+    <section>
+      <h2>Skills</h2>
+      <ul class="grid">
+        <li>Data Analytics</li>
+        <li>Machine & Deep Learning</li>
+        <li>Business Intelligence & AI</li>
+        <li>Statistical Analysis</li>
+        <li>Model Optimization</li>
+        <li>Python, R, SQL</li>
+        <li>Power BI, Excel</li>
+        <li>Problem Solving</li>
       </ul>
     </section>
 
-    <!-- Resume -->
-    <section id="resume">
-      <h2>Resume</h2>
-      <h3>Experience</h3>
-      <p><strong>Accountant Assistant</strong> – Athens, Greece (Aug 2022 – Today)</p>
-      <p>Responsible for document registration, financial statements, and VAT declarations.</p>
-
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>MSc Data Science and Society – Tilburg University, Netherlands (Aug 2024 – June 2025)</li>
+        <li>Pre-Master in Data Science – Tilburg University, Netherlands (Jan 2024 – June 2024)</li>
+        <li>BSc in Banking & Financial Management – University of Piraeus, Greece (Oct 2016 – June 2022)</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>Experience</h2>
+      <p><strong>Accountant Assistant</strong> – Athens, Greece (Aug 2022 – Sep 2025)</p>
+      <p>Responsible for document registration in accounting platforms (PBS Prosvasis), Financial Statements, Tax Returns, and VAT declarations.</p>
       <p><strong>Economist, Consultant – Simbiosis Consultants</strong> – Athens, Greece (Nov 2021 – Jul 2023)</p>
-      <p>Business plans, viability studies, EU Grant Applications, and Digital Marketing.</p>
+      <p>Business plans, Viability Studies, EU Grant Applications, Digital Marketing.</p>
+    </section>
 
-      <h3>Education</h3>
+    <section>
+      <h2>Certifications</h2>
       <ul>
-        <li>MSc Data Science and Society – Tilburg University (Aug 2024 – Jun 2025)</li>
-        <li>Pre-Master in Data Science – Tilburg University (Jan 2024 – Jun 2024)</li>
-        <li>BSc Banking & Financial Management – University of Piraeus (Oct 2016 – Jun 2022)</li>
+        <li>Professional Data Scientist – DataCamp (Issued June 2025)</li>
+        <li>Data Scientist Associate – DataCamp (Issued Sep 2024)</li>
+        <li>Data Analyst Associate – DataCamp (Issued May 2025)</li>
       </ul>
     </section>
 
-    <!-- CV -->
-    <section id="cv">
-      <h2>CV</h2>
-      <a class="btn" href="CV_Eleftherios_Diamantidis.pdf" download>📄 Download CV</a>
-      <div style="margin-top:20px;">
-        <object data="CV_Eleftherios_Diamantidis.pdf" type="application/pdf" width="100%" height="600">
-          <p>Your browser can't display the CV. <a href="CV_Eleftherios_Diamantidis.pdf">Open in new tab</a>.</p>
-        </object>
+    <section>
+      <h2>Licences</h2>
+      <ul>
+        <li>Python Data Fundamentals - DataCamp (Jan 2024)</li>
+        <li>Excel Fundamentals - DataCamp (Feb 2024)</li>
+        <li>SQL Fundamentals - DataCamp (Feb 2024)</li>
+        <li>R Programming - DataCamp (Feb 2024)</li>
+        <li>Data Analyst in Python - DataCamp (Aug 2024)</li>
+        <li>Machine Learning Scientist in Python - DataCamp (Nov 2024)</li>
+        <li>Finance Fundamentals in Python - DataCamp (Sep 2024)</li>
+        <li>Supervised Machine Learning in Python - DataCamp (Nov 2024)</li>
+        <li>Deep Learning in Python - DataCamp (Dec 2024)</li>
+        <li>Associate AI Engineer for Data Scientists - DataCamp (Jan 2025)</li>
+        <li>Applied Finance in Python - DataCamp (May 2025)</li>
+        <li>Machine Learning Fundamentals in Python - DataCamp (May 2025)</li>
+        <li>Analyzing Financial Statements in Python - DataCamp (May 2025)</li>
+        <li>Time Series in Python - DataCamp (June 2025)</li>
+        <li>Coding for Data - Sololearn (June 2025)</li>
+        <li>Machine Learning for Data Science Projects - IBM (July 2025)</li>
+        <li>Microsoft Azure Fundamentals (AZ-900) - DataCamp (Oct 2025)</li>
+        <li>Associate Data Engineer in SQL (Oct 2025)</li>
+        <li>Data Engineer in Python (Oct 2025)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Moneylytics – AI Personal Finance Analyst</h3>
+        <p class="subtitle">(2025)</p>
+        <p>AI-powered web app for automated expense categorization, budgeting, and financial insights.</p>
+      </div>
+      <div class="project">
+        <h3>Forecasting Crypto Price Peaks</h3>
+        <p class="subtitle">Regression-Based Time-Until-New-High Predictions (Master Thesis 2025)</p>
+        <p>Machine Learning approach for Recovery Time Estimation.</p>
+      </div>
+      <div class="project">
+        <h3>IMDB Sentiment Analysis</h3>
+        <p class="subtitle"> (2025)</p>
+        <p>LSTM neural network for sentiment classification</p>
+      </div>
+      <div class="project">
+        <h3>Driver Distraction Detection</h3>
+        <p class="subtitle">CNN vs Transfer Learning (2025)</p>
+        <p>Comparison between Convolutional Neural Networks and Transfer Learning.</p>
+      </div>
+      <div class="project">
+        <h3>WFP Supply Chain Optimization</h3>
+        <p class="subtitle">World Food Programme (2025)</p>
+        <p>Optimized logistics for food delivery systems at scale.</p>
+      </div>
+      <div class="project">
+        <h3>Generative AI for Strategic Insights</h3>
+        <p class="subtitle">(2024)</p>
+        <p>AI-powered data exploration in enterprise context.</p>
+      </div>
+      <div class="project">
+        <h3>Scientific Paper Impact Prediction</h3>
+        <p class="subtitle">(2024)</p>
+        <p>Predictive modeling for academic influence scores.</p>
+      </div>
+      <div class="project">
+        <h3>AI Bot for Pathfinding</h3>
+        <p>Autonomous search agent in Python using heuristic strategies.</p>
+      </div>
+      <div class="project">
+        <h3>Pricing Rainbow Options</h3>
+        <p>Monte Carlo simulations and variance reduction in MATLAB.</p>
+      </div>
+      <div class="project">
+        <h3>Brazilian Economy During COVID-19</h3>
+        <p>Macroeconomic analysis based on key national indicators.</p>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Projects</h2>
+    <div class="github-button-container">
+      <a href="https://github.com/lefteris-diamantidis" target="_blank" class="github-button">
+        <svg class="github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56v-2.02c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.95 10.95 0 0 1 5.73 0c2.18-1.49 3.14-1.18 3.14-1.18.62 1.58.23 2.75.11 3.04.73.81 1.18 1.85 1.18 3.11 0 4.43-2.7 5.41-5.27 5.7.43.38.81 1.13.81 2.28v3.38c0 .31.2.68.8.56A10.5 10.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+        </svg>
+        View More Projects on GitHub
+      </a>
+    </div>
 
-      <h3>Forecasting Crypto Peaks</h3>
-      <p>Regression-Based Time-Until-New-High (Master Thesis 2025)</p>
-
-      <h3>Driver Distraction Detection</h3>
-      <p>CNN vs Transfer Learning (2025)</p>
-
-      <h3>WFP Supply Chain Optimization</h3>
-      <p>Strategic Solutions for the World Food Programme (2025)</p>
-
-      <a class="btn" href="https://github.com/lefteris-diamantidis" target="_blank">View More on GitHub</a>
-    </section>
-
-    <!-- Other Info -->
-    <section id="other">
-      <h2>Other Information</h2>
-      <h3>Website Creation & Development</h3>
+    <section>
+      <h2>Other Working Experience</h2>
       <ul>
-        <li><a href="https://asgeraki.gr/">asgeraki.gr</a></li>
-        <li><a href="https://asstabivn.gr/">asstabivn.gr</a></li>
-        <li><a href="https://elaiou-ozein.gr/">elaiou-ozein.gr</a></li>
-        <li><a href="https://choudetsi.gr/">choudetsi.gr</a></li>
-        <li><a href="https://h-gnosi.gr/">h-gnosi.gr</a></li>
-        <li><a href="https://samoshousecare.gr/">samoshousecare.gr</a></li>
-        <li><a href="https://roviesolives.gr/">roviesolives.gr</a></li>
-        <li><a href="https://lagoudairy.gr/">lagoudairy.gr</a></li>
-      </ul>
-
-      <h3 style="margin-top:20px;">Website Design</h3>
-      <ul>
-        <li><a href="https://omadesparagogon.gr/">omadesparagogon.gr</a></li>
-        <li><a href="https://www.facebook.com/deligate.gr">facebook.com/deligate.gr</a></li>
-      </ul>
-
-      <h3 style="margin-top:20px;">Languages</h3>
-      <ul>
-        <li>Greek — Native</li>
-        <li>English — C2 (CPE) & IELTS</li>
-        <li>German — B1</li>
+        <li><strong>Bartender</strong> - Navagos Beach Bar, Samos, Greece (Jul 2025 - Sep 2025)</li>
+        <li><strong>Assistant Bartender</strong> – Asterias Seaside Experience, Samos Greece (Jul 2019 – Sep 2019)</li>
+        <li><strong>Waiter</strong> – Navagos Beach Bar, Samos, Greece (Jul 2017 – Sep 2017)</li>
+        <li><strong>Waiter</strong> - Navagos Beach Bar, Samos, Greece (Jul 2018 - Sep 2018)</li>
       </ul>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
+    <section>
+      <h2>Extracurricular Activities</h2>
       <ul>
-        <li>Email — <a href="mailto:lef.diamantidis@gmail.com">lef.diamantidis@gmail.com</a></li>
-        <li>LinkedIn — <a href="https://www.linkedin.com/in/eleftherios-diamantidis/" target="_blank">/in/eleftherios-diamantidis</a></li>
-        <li>GitHub — <a href="https://github.com/lefteris-diamantidis" target="_blank">@lefteris-diamantidis</a></li>
+        <li><strong>Website Creation & Development:</strong>
+          <ul>
+            <li><a href="https://asgeraki.gr/" target="_blank">asgeraki.gr</a></li>
+            <li><a href="https://asstabivn.gr/" target="_blank">asstabivn.gr</a></li>
+            <li><a href="https://elaiou-ozein.gr/" target="_blank">elaiou-ozein.gr</a></li>
+            <li><a href="https://choudetsi.gr/" target="_blank">choudetsi.gr</a></li>
+            <li><a href="https://h-gnosi.gr/" target="_blank">h-gnosi.gr</a></li>
+            <li><a href="https://samoshousecare.gr/" target="_blank">samoshousecare.gr</a></li>
+            <li><a href="https://roviesolives.gr/" target="_blank">roviesolives.gr</a></li>
+            <li><a href="https://lagoudairy.gr/" target="_blank">lagoudairy.gr</a></li>
+          </ul>
+        </li>
+        <br>
+        <li><strong>Website Design:</strong>
+          <ul>
+            <li><a href="https://omadesparagogon.gr/" target="_blank">omadesparagogon.gr</a></li>
+            <li><a href="https://www.facebook.com/deligate.gr" target="_blank">facebook.com/deligate.gr</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <ul>
+        <li>Greek – Native</li>
+        <li>English – Certificate of Proficiency (C2) & IELTS</li>
+        <li>German – B1 (Certificate in German Language)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Extra Information</h2>
+      <ul>
+        <li>Born in Samos, Greece</li>
+        <li>Birthday: 09-04-1998</li>
+        <li>Military Service completed (11/20 - 08/21)</li>
       </ul>
     </section>
 
     <footer>
-      <p>© Eleftherios Diamantidis · 2025</p>
+      <p>Made by Eleftherios Diamantidis | 2025</p>
     </footer>
   </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 </body>
 </html>
