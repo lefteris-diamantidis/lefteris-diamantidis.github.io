@@ -532,26 +532,20 @@
   <script>
     const langToggle = document.getElementById("lang-toggle");
     const flagIcon = document.getElementById("flag-icon");
-    const currentLang = localStorage.getItem("lang") || "en";
+    const currentPage = window.location.pathname.includes("index_gr.html") ? "gr" : "en";
 
-    function setLanguage(lang) {
-      localStorage.setItem("lang", lang);
-      if (lang === "gr") {
-        window.location.href = "index_gr.html";
-      } else {
-        window.location.href = "index.html";
-      }
-    }
+    // Set the flag for the OTHER language (the one you can switch to)
+    flagIcon.src = currentPage === "gr"
+      ? "https://flagcdn.com/w20/gb.png"  // show English flag when on Greek page
+      : "https://flagcdn.com/w20/gr.png"; // show Greek flag when on English page
 
-    // Set flag initially
-    flagIcon.src = currentLang === "gr"
-      ? "https://flagcdn.com/w20/gr.png"
-      : "https://flagcdn.com/w20/gb.png";
-
-    // Switch flags on click
+    // Switch languages on click
     langToggle.addEventListener("click", () => {
-      const newLang = currentLang === "en" ? "gr" : "en";
-      setLanguage(newLang);
+      if (currentPage === "gr") {
+        window.location.href = "index.html"; // go to English
+      } else {
+        window.location.href = "index_gr.html"; // go to Greek
+      }
     });
   </script>
 </body>
