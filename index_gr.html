@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ελευθέριος Διαμαντίδης | Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+  <div class="sidebar-top">
+    <img src="profile_photo.jpg" alt="Eleftherios Diamantidis">
+    <h1>Ελευθέριος Διαμαντίδης</h1>
+    <div class="role-box">Data Scientist</div>
+    <div class="toggle-row">
+      <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button id="lang-toggle" class="lang-toggle" title="Switch Language">
+        <img src="https://flagcdn.com/w20/gb.png" alt="English" id="flag-icon">
+      </button>
+    </div>
+    <hr>
+    
+  </div>
+
+  <div class="contact">
+    <div class="contact-item">
+      <i class="fa-solid fa-envelope"></i>
+      <div>
+        <div class="contact-label">EMAIL</div>
+        <div class="contact-text"><a href="mailto:lef.diamantidis@gmail.com">lef.diamantidis@gmail.com</a></div>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <i class="fa-solid fa-phone"></i>
+      <div>
+        <div class="contact-label">ΤΗΛΕΦΩΝΟ</div>
+        <div class="contact-text">+30 6977237393</div>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <i class="fa-solid fa-cake-candles"></i>
+      <div>
+        <div class="contact-label">ΗΜΕΡΟΜΗΝΙΑ ΓΕΝΝΗΣΗΣ</div>
+        <div class="contact-text">9 Απριλίου 1998</div>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <div class="contact-label">ΤΟΠΟΘΕΣΙΑ</div>
+        <div class="contact-text">Σάμος, Ελλάδα</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="social-row">
+    <a href="https://www.linkedin.com/in/eleftherios-diamantidis/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/lef.diamantidis" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/lefteris_diamantidis/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+      <!-- MENU -->
+      <div class="tabs">
+        <button class="tab active" data-target="about">Σχετικά</button>
+        <button class="tab" data-target="resume">Περίληψη</button>
+        <button class="tab" data-target="cv">Βιογραφικό</button>
+        <button class="tab" data-target="projects">Έργα</button>
+        <button class="tab" data-target="other">Πρόσθετα</button>
+        <button class="tab" data-target="contact">Επικοινωνία</button>
+      </div>
+      <div class="divider"></div>
+
+      <!-- ABOUT -->
+      <section id="about" class="section active">
+        <h2 style="text-align:center;">ΣΧΕΤΙΚΑ</h2>
+        <p>Εξειδικευμένος επιστήμονας δεδομένων με έμφαση στην Επιστήμη Δεδομένων, Τεχνητή Νοημοσύνη και Ανάλυση. Ικανός στη χρήση Python, Μηχανικής Μάθησης, Βαθιάς Μάθησης, SQL και Οπτικοποίησης Δεδομένων. Ικανότητα στη σχεδίαση και ανάπτυξη μοντέλων πρόγνωσης, αυτοματοποίησης διαδικασιών και εξαγωγής πληροφοριών με τη χρήση δεδομένων για τη στήριξη στρατηγικών αποφάσεων. Παρέχει πρακτικές, βασισμένες σε δεδομένα λύσεις που ευθυγραμμίζονται με τους επιχειρηματικούς στόχους.</p>
+
+        <h3 style="margin-top:28px;color:#2563eb;">Πρόσφατα Εγχειρήματα</h3>
+        <p><strong>Moneylytics</strong> — Ανάπτυξη ενός AI μοντέλου χρηματοοικονομικών μέσω Streamlit app για αυτόματη κατηγοριοποίηση εξόδων, προϋπολογισμών, και πληροφοριών με τη βοήθεια GPT μοντέλων. Ενσωματώνει προβλέψεις δαπανών βασισμένες στη Μηχανική Μάθηση και βελτιστοποίηση των στόχων αποταμίευσης.</p>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="section">
+        <h2 style="text-align:center;">ΕΠΑΓΓΕΛΜΑΤΙΚΗ ΠΕΡΙΛΗΨΗ</h2>
+
+        <h3>Εκπαίδευση</h3>
+
+        <!-- MSc -->
+        <div class="edu-card">
+          <h4>Μεταπτυχιακό Τίτλος (MSc) στην Επιστήμη Δεδομένων και Κοινωνία <span>– Πανεπιστήμιο Τίλμπουρχ (08/2024 – 06/2025)</span></h4>
+          <ul>
+            <li><strong>Εστίαση:</strong> Επιστήμη Δεδομένων, Τεχνητή Νοημοσύνη, και Κοινωνική Επιστήμη</li>
+            <li><strong>Μαθήματα Κορμού:</strong> Στατιστική και Μεθοδολογία, Εξόρυξη Δεδομένων, Μηχανική Μάθηση, Ρύθμιση και Νομοθεσία της Επιστήμης Δεδομένων</li>
+            <li><strong>Μαθήματα Ερευνητικών Δεξιοτήτων:</strong> Επεξεργασία Δεδομένων, Προχωρημένη Επεξεργασία Δεδομένων</li>
+            <li><strong>Μαθήματα Επιλογής:</strong> Βαθιά Μάθηση, Βελτιστοποίηση για την Επιστήμη Δεδομένων</li>
+            <li><strong>Διπλωματική Επεξεργασία:</strong> <em>“Πρόβλεψη Κορυφών Τιμών Κρυπτονομισμάτων: Προβλέψεις Χρόνου-Έως-Νέο-Υψηλό με βάση την Παλινδρόμηση”</em> — Μια προσέγγιση Μηχανικής Μάθησης για την Εκτίμηση Χρόνου Ανάκαμψης, εφαρμοσμένη στην πρόβλεψη χρηματοοικονομικών χρονοσειρών.</li>
+          </ul>
+        </div>
+
+        <!-- Προ-Μεταπτυχιακό -->
+        <div class="edu-card">
+        <h4>Προ-Μεταπτυχιακό στην Επιστήμη και Κοινωνία των Δεδομένων<span> – Πανεπιστήμιο Τίλμπουρχ (01/2024 - 07/2024)</span></h4>
+        <ul>
+            <li><strong>Στόχος:</strong> Γέφυρα μεταξύ ποσοτικών, υπολογιστικών και αναλυτικών βάσεων για προχωρημένες σπουδές στην Επιστήμη Δεδομένων.</li>
+            <li><strong>Κύρια Μαθήματα:</strong> Στατιστική, Μαθηματικός Λογισμός για την Επιστήμη Δεδομένων, Προγραμματισμός και Αλγοριθμική Σκέψη, Εισαγωγή στην Τεχνητή Νοημοσύνη, Ερευνητικό Σεμινάριο.</li>
+            <li><strong>Αποκτηθείσες Δεξιότητες:</strong> Ενίσχυση στατιστικής συμπερασματολογίας, αλγοριθμικής επίλυσης προβλημάτων και προγραμματισμού σε Python για εφαρμοσμένη ανάλυση δεδομένων.</li>
+        </ul>
+        </div>
+
+        <!-- Πτυχίο -->
+        <div class="edu-card">
+        <h4>Πτυχίο (BSc) στη Διοίκηση και Χρηματοοικονομική Τραπεζών <span> – Πανεπιστήμιο Πειραιώς (10/2016 – 07/2022)</span></h4>
+        <ul>
+            <li><strong>Εστίαση:</strong> Χρηματοοικονομικά, Τραπεζική, Οικονομετρία και Ποσοτικές Μέθοδοι στα Χρηματοοικονομικά.</li>
+            <li><strong>Βασικά Θέματα:</strong> Θεωρία Επενδύσεων, Διαχείριση Κινδύνου, Βελτιστοποίηση Χαρτοφυλακίου, Χρηματοοικονομική Μοντελοποίηση.</li>
+            <li><strong>Ομαδικό Έργο:</strong> <em>«Τιμολόγηση Rainbow Options»</em> — υλοποίηση προσομοιώσεων Monte Carlo με αντιθετική δειγματοληψία και μεταβλητές ελέγχου στο MATLAB για τιμολόγηση παραγώγων πολλαπλών υποκείμενων.</li>
+            <li><strong>Αποτέλεσμα:</strong> Ανάπτυξη ισχυρής αναλυτικής σκέψης, ικανοτήτων χρηματοοικονομικών υπολογισμών και εμπειρίας ομαδικής εργασίας σε ποσοτική έρευνα.</li>
+        </ul>
+        </div>
+
+
+        <h3>Επαγγελματική Εμπειρία</h3>
+
+        <!-- Βοηθός Λογιστή -->
+        <div class="exp-card">
+        <h4>Βοηθός Λογιστή <span>– Αθήνα, Ελλάδα (08/2022 – Σήμερα)</span></h4>
+        <ul>
+            <li>Υπεύθυνος για την καταχώριση οικονομικών εγγράφων, την τήρηση βιβλίων και τη διαδικασία υποβολής δηλώσεων ΦΠΑ μέσω λογιστικών προγραμμάτων.</li>
+            <li>Συνεισφορά στην προετοιμασία οικονομικών καταστάσεων και φορολογικών δηλώσεων, διασφαλίζοντας τη συμμόρφωση με τα ελληνικά λογιστικά πρότυπα.</li>
+            <li>Ανάπτυξη αυτοματοποιημένων εργαλείων στο Excel για τη βελτιστοποίηση της παρακολούθησης τιμολογίων και της αναφοράς εξόδων.</li>
+            <li><strong>Βασικές Δεξιότητες:</strong> Χρηματοοικονομική Ανάλυση, Ακρίβεια Δεδομένων, Αυτοματοποίηση Αναφορών, Λογισμικό Λογιστικής.</li>
+        </ul>
+        </div>
+
+        <!-- Οικονομολόγος & Σύμβουλος -->
+        <div class="exp-card">
+        <h4>Οικονομολόγος & Σύμβουλος <span>– Simbiosis Consultants, Αθήνα (11/2021 – 07/2023)</span></h4>
+        <ul>
+            <li><strong>Οργανισμός:</strong> Simbiosis Consultants</li>
+            <li>Εκπόνηση επιχειρηματικών σχεδίων και μελετών βιωσιμότητας για μικρομεσαίες επιχειρήσεις σε διάφορους κλάδους.</li>
+            <li>Υποστήριξη πελατών στη σύνταξη προτάσεων χρηματοδότησης ΕΕ και στρατηγικών ψηφιακού μετασχηματισμού.</li>
+            <li>Διενέργεια χρηματοοικονομικών αναλύσεων και ανάπτυξη τεχνοοικονομικών μελετών για την αξιολόγηση βιωσιμότητας και απόδοσης επενδύσεων (ROI).</li>
+            <li>Ηγήθηκε της στρατηγικής ψηφιακής προώθησης, διαχειριζόμενος την ανάπτυξη ιστοσελίδων και τα analytics για έργα χρηματοδοτούμενα από την ΕΕ.</li>
+            <li><strong>Βασικές Δεξιότητες:</strong> Χρηματοοικονομική Μοντελοποίηση, Στρατηγική Συμβουλευτική, Ανάλυση Αγοράς, Επιχειρηματική Ανάπτυξη.</li>
+        </ul>
+        </div>
+
+        <!-- Πρόσθετη Επαγγελματική Εμπειρία -->
+        <div class="exp-card">
+        <h4>Πρόσθετη Επαγγελματική Εμπειρία</h4>
+        <ul>
+            <li>Απασχόληση σε εποχιακές θέσεις στον τομέα της φιλοξενίας (Σάμος, Ελλάδα), με ανάπτυξη ισχυρών διαπροσωπικών και οργανωτικών δεξιοτήτων.</li>
+            <li>Βελτίωση προσαρμοστικότητας, ομαδικότητας και επικοινωνίας κατά τη διαχείριση λειτουργιών εξυπηρέτησης πελατών σε απαιτητικά περιβάλλοντα.</li>
+        </ul>
+        </div>
+
+
+        <h3>Δεξιότητες</h3>
+
+        <!-- Επαγγελματικές Δεξιότητες -->
+        <h4 style="color:#2563eb;margin-top:20px;">Επαγγελματικές Δεξιότητες</h4>
+        <div class="skill-bar"><span>Λήψη Αποφάσεων βάσει Δεδομένων</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
+        <div class="skill-bar"><span>Διαχείριση Έργων και Χρόνου</span><div class="bar"><div class="bar-fill" style="width:95%"></div></div></div>
+        <div class="skill-bar"><span>Προσοχή στη Λεπτομέρεια</span><div class="bar"><div class="bar-fill" style="width:100%"></div></div></div>
+
+        <!-- Τεχνικές Δεξιότητες -->
+        <h4 style="color:#2563eb;margin-top:20px;">Τεχνικές Δεξιότητες</h4>
+        <div class="skill-bar"><span>Python (Pandas, Scikit-learn, PyTorch, TensorFlow)</span><div class="bar"><div class="bar-fill" style="width:95%"></div></div></div>
+        <div class="skill-bar"><span>Βάσεις Δεδομένων – SQL, R, MATLAB</span><div class="bar"><div class="bar-fill" style="width:80%"></div></div></div>
+        <div class="skill-bar"><span>Μηχανική Μάθηση & Βαθιά Μάθηση</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>     
+        <div class="skill-bar"><span>Πίνακες Ελέγχου Excel, Power Query, Power BI</span><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
+                
+        <!-- Κοινωνικές Δεξιότητες -->
+        <h4 style="color:#2563eb;margin-top:20px;">Κοινωνικές Δεξιότητες</h4>
+        <div class="skill-bar"><span>Αναλυτική και Κριτική Σκέψη</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
+        <div class="skill-bar"><span>Επίλυση Προβλημάτων & Προσαρμοστικότητα</span><div class="bar"><div class="bar-fill" style="width:95%"></div></div></div>
+        <div class="skill-bar"><span>Επιχειρηματική Αντίληψη και Πνευματική Περιέργεια</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
+        <div class="skill-bar"><span>Ομαδικό Πνεύμα & Συνεργασία</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
+        <div class="skill-bar"><span>Επικοινωνία & Παρουσίαση</span><div class="bar"><div class="bar-fill" style="width:80%"></div></div></div>
+
+        <!-- Τεχνολογικό Πλαίσιο -->
+        <h3>Τεχνολογικό Πλαίσιο</h3>
+        <div class="tech-card">
+        <ul>
+            <li><strong>Περιβάλλον Ανάπτυξης:</strong> Jupyter Notebook, Visual Studio Code, Google Colab</li>
+            <li><strong>Μηχανική Δεδομένων & Ροές Εργασιών:</strong> Pandas, NumPy, Power Query, εργαλεία ETL</li>
+            <li><strong>Ανάπτυξη Μοντέλων:</strong> Scikit-learn, TensorFlow, Keras, PyTorch</li>
+            <li><strong>Οπτικοποίηση & Αναφορές:</strong> Power BI, Tableau (εισαγωγικό), Matplotlib, Seaborn</li>
+            <li><strong>Ανάπτυξη & Ενοποίηση στο Cloud:</strong> Azure Machine Learning (εισαγωγικό), Streamlit</li>
+            <li><strong>Αυτοματοποίηση & APIs:</strong> Python scripting, REST APIs, OpenAI API, LangChain</li>
+            <li><strong>Τεχνητή Νοημοσύνη & LLMs:</strong> GPT-5, GPT-4-Turbo, Gemini, Copilot, Perplexity</li>
+            <li><strong>Έλεγχος Έκδοσης & Συνεργασία:</strong> Git, GitHub</li>
+        </ul>
+        </div>
+
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section">
+        <h2 style="text-align:center;">ΒΙΟΓΡΑΦΙΚΟ</h2>
+
+        <!-- CV Download Buttons -->
+        <div class="cv-buttons">
+            <a class="btn" href="CV_Eleftherios Diamantidis_EN.pdf" download>
+                <i class="fa-solid fa-file-pdf"></i> English CV
+            </a>
+            <a class="btn" href="CV_Eleftherios Diamantidis_GR.pdf" download>
+                <i class="fa-solid fa-file-pdf"></i> Greek CV
+            </a>
+        </div>
+
+    <!-- Χρονολόγιο -->
+    <div class="timeline">
+    <div class="timeline-item">
+        <h4>Προσωπικές Πληροφορίες</h4>
+        <p><strong>Ημερομηνία Γέννησης:</strong> 9 Απριλίου 1998 — Σάμος, Ελλάδα<br>
+        <strong>Γλώσσες:</strong> Ελληνικά (Μητρική), Αγγλικά (C2), Γερμανικά (B1)</p>
+    </div>
+
+    <div class="timeline-item">
+        <h4>Επαγγελματικός Στόχος</h4>
+        <p>Αξιοποίηση της ανάλυσης δεδομένων και της μηχανικής μάθησης για την παροχή στρατηγικών
+        πληροφοριών και τη συμβολή σε ουσιαστική, βασισμένη στα δεδομένα λήψη αποφάσεων
+        σε επιχειρηματικά και ερευνητικά περιβάλλοντα.</p>
+    </div>
+
+    <div class="timeline-item">
+        <h4>Επαγγελματική Περίληψη</h4>
+        <p>Επιστήμονας Δεδομένων με ισχυρό αναλυτικό υπόβαθρο και πρακτική εμπειρία σε ML pipelines,
+        εργαλεία επιχειρηματικής ευφυΐας (BI) και βελτιστοποίηση. Εξειδικεύεται στη μετατροπή δεδομένων
+        σε εφαρμόσιμες επιχειρηματικές πληροφορίες, χρησιμοποιώντας Python, Power BI και προχωρημένη
+        στατιστική μοντελοποίηση.</p>
+    </div>
+
+    <div class="timeline-item">
+        <h4>Δεξιότητες</h4>
+        <p>
+        Διαχείριση και Επεξεργασία Δεδομένων<br>
+        Οπτικοποίηση Δεδομένων<br>
+        Μηχανική Μάθηση<br>
+        Βαθιά Μάθηση<br>
+        Δημιουργία Χαρακτηριστικών (Feature Engineering)<br>
+        Μοντέλα Βελτιστοποίησης<br>
+        Στατιστική Ανάλυση
+        </p>
+    </div>
+
+    <div class="timeline-item">
+        <h4>Πιστοποιήσεις</h4>
+        <p>
+        Professional Data Scientist – DataCamp (Ιούνιος 2025)<br>
+        Data Scientist Associate – DataCamp (Σεπτέμβριος 2024)<br>
+        Data Analyst Associate – DataCamp (Μάιος 2025)
+        </p>
+    </div>
+
+    <div class="timeline-item">
+        <h4>Άδειες & Μαθήματα</h4>
+        <p>
+        Python Data Fundamentals – DataCamp (Ιαν. 2024)<br>
+        Excel Fundamentals – DataCamp (Φεβ. 2024)<br>
+        SQL Fundamentals – DataCamp (Φεβ. 2024)<br>
+        R Programming – DataCamp (Φεβ. 2024)<br>
+        Data Analyst in Python – DataCamp (Αύγ. 2024)<br>
+        Machine Learning Scientist in Python – DataCamp (Νοέ. 2024)<br>
+        Finance Fundamentals in Python – DataCamp (Σεπ. 2024)<br>
+        Supervised Machine Learning in Python – DataCamp (Νοέ. 2024)<br>
+        Deep Learning in Python – DataCamp (Δεκ. 2024)<br>
+        Associate AI Engineer for Data Scientists – DataCamp (Ιαν. 2025)<br>
+        Applied Finance in Python – DataCamp (Μάιος 2025)<br>
+        Machine Learning Fundamentals in Python – DataCamp (Μάιος 2025)<br>
+        Analyzing Financial Statements in Python – DataCamp (Μάιος 2025)<br>
+        Time Series in Python – DataCamp (Ιούν. 2025)<br>
+        Coding for Data – Sololearn (Ιούν. 2025)<br>
+        Machine Learning for Data Science Projects – IBM (Ιούλ. 2025)<br>
+        Microsoft Azure Fundamentals (AZ-900) – DataCamp (Οκτ. 2025)<br>
+        Associate Data Engineer in SQL – DataCamp (Οκτ. 2025)<br>
+        Data Engineer in Python – DataCamp (Οκτ. 2025)
+        </p>
+    </div>
+    </div>
+
+    </section>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+    <h2 style="text-align:center;">ΕΡΓΑ</h2>
+
+    <div class="projects-grid">
+        <div class="project-card">
+        <h3>Moneylytics – AI Προσωπικός Οικονομικός Αναλυτής</h3>
+        <p class="project-sub">2025</p>
+        <p>Διαδικτυακή εφαρμογή με Τεχνητή Νοημοσύνη για αυτόματη κατηγοριοποίηση εξόδων, προϋπολογισμό και παραγωγή οικονομικών αναλύσεων.</p>
+        <a href="https://moneylytics.streamlit.app/" target="_blank" class="project-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Προβολή Έργου
+        </a>
+        </div>
+
+        <div class="project-card">
+        <h3>Πρόβλεψη Κορυφών Τιμών Κρυπτονομισμάτων</h3>
+        <p class="project-sub">Παλινδρομικές Προβλέψεις Χρόνου-Έως-Νέο-Υψηλό (Μεταπτυχιακή Διατριβή 2025)</p>
+        <p>Προσέγγιση Μηχανικής Μάθησης για εκτίμηση χρόνου ανάκαμψης, με χρήση παλινδρομικών μοντέλων, εξόρυξης χαρακτηριστικών και γενίκευσης μεταξύ περιουσιακών στοιχείων.</p>
+        </div>
+
+        <div class="project-card">
+        <h3>Ανάλυση Συναισθήματος IMDB</h3>
+        <p class="project-sub">2025</p>
+        <p>Ανάπτυξη νευρωνικού δικτύου LSTM για ταξινόμηση συναισθήματος σε κείμενα της βάσης δεδομένων IMDB.</p>
+        </div>
+
+        <div class="project-card">
+        <h3>Ανίχνευση Απόσπασης Προσοχής Οδηγού</h3>
+        <p class="project-sub">CNN vs Transfer Learning (2025)</p>
+        <p>Σύγκριση μεταξύ προσαρμοσμένων CNN αρχιτεκτονικών και μοντέλων Transfer Learning για την ανίχνευση προσοχής οδηγών.</p>
+        </div>
+
+        <div class="project-card">
+        <h3>Βελτιστοποίηση Εφοδιαστικής Αλυσίδας WFP</h3>
+        <p class="project-sub">World Food Programme (2025)</p>
+        <p>Βελτιστοποίηση εφοδιαστικής και κατανομής χωρητικότητας για διανομή τροφίμων σε αναπτυσσόμενες περιοχές με χρήση μικτών ακέραιων προγραμματισμών και ανάλυση ευαισθησίας σε διαφορετικά σενάρια.</p>
+        </div>
+
+        <div class="project-card">
+        <h3>Γενετική Τεχνιτής Νοημοσύνης για Στρατηγικές Αποφάσεις</h3>
+        <p class="project-sub">2024</p>
+        <p>Χρήση τεχνικών prompt engineering και Γενετικής Τεχνητής Νοημοσύνης για ανάλυση εταιρικών δεδομένων και παραγωγή στρατηγικών συμπερασμάτων.</p>
+        </div>
+
+        <div class="project-card">
+        <h3>Πρόβλεψη Επιρροής Επιστημονικών Δημοσιεύσεων</h3>
+        <p class="project-sub">2024</p>
+        <p>Ανάπτυξη προγνωστικών μοντέλων για την εκτίμηση του επιστημονικού αντίκτυπου δημοσιεύσεων.</p>
+        </div>
+
+        <div class="project-card">
+        <h3>AI Bot για Εύρεση Διαδρομών</h3>
+        <p class="project-sub">2024</p>
+        <p>Αυτόνομος πράκτορας αναζήτησης σε Python που χρησιμοποιεί ευρετικές μεθόδους βελτιστοποίησης για εύρεση της συντομότερης διαδρομής.</p>
+        </div>
+
+        <div class="project-card">
+        <h3>Αποτίμηση Rainbow Options</h3>
+        <p class="project-sub">2023</p>
+        <p>Χρήση προσομοιώσεων Monte Carlo, αντιθετική δειγματοληψίας και μεταβλητών ελέγχου για αποτίμηση πολυ-περιουσιακών παραγώγων τύπου Rainbow Options.</p>
+        </div>
+
+        <div class="project-card">
+        <h3>Η Οικονομία της Βραζιλίας Κατά τη Διάρκεια της COVID-19</h3>
+        <p class="project-sub">2022</p>
+        <p>Μακροοικονομική ανάλυση της οικονομικής επίδοσης της Βραζιλίας μέσω χρηματοοικονομικών και κοινωνικών δεικτών.</p>
+        </div>
+    </div>
+
+    <!-- GitHub Button -->
+    <div class="github-button-container">
+        <a href="https://github.com/lefteris-diamantidis" target="_blank" class="github-button">
+        <i class="fab fa-github"></i> Δείτε περισσότερα έργα στο GitHub
+        </a>
+    </div>
+    </section>
+
+    <!-- OTHER INFO -->
+    <section id="other" class="section">
+      <h2 style="text-align:center;">ΙΣΤΟΣΕΛΙΔΕΣ</h2>
+
+      <!-- WEBSITE CREATION -->
+      <h3>Κατασκευή ιστοσελίδων</h3>
+      <div class="site-grid">
+        <div class="site-card">
+          <img src="thumbs/asgeraki.png" alt="asgeraki.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://asgeraki.gr/" target="_blank">
+              <h4>asgeraki.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-card">
+          <img src="thumbs/asstabivn.png" alt="asstabivn.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://asstabivn.gr/" target="_blank">
+              <h4>asstabivn.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-card">
+          <img src="thumbs/elaiou-ozein.png" alt="elaiou-ozein.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://elaiou-ozein.gr/" target="_blank">
+              <h4>elaiou-ozein.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-card">
+          <img src="thumbs/choudetsi.png" alt="choudetsi.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://choudetsi.gr/" target="_blank">
+              <h4>choudetsi.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-card">
+          <img src="thumbs/h-gnosi.png" alt="h-gnosi.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://h-gnosi.gr/" target="_blank">
+              <h4>h-gnosi.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-card">
+          <img src="thumbs/samoshousecare.png" alt="samoshousecare.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://samoshousecare.gr/" target="_blank">
+              <h4>samoshousecare.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-card">
+          <img src="thumbs/roviesolives.png" alt="roviesolives.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://roviesolives.gr/" target="_blank">
+              <h4>roviesolives.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-card">
+          <img src="thumbs/lagoudairy.png" alt="lagoudairy.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://lagoudairy.gr/" target="_blank">
+              <h4>lagoudairy.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- WEBSITE DESIGN -->
+      <h3 style="margin-top:35px;">Σχεδίαση ιστοσελίδων</h3>
+      <div class="site-grid">
+        <div class="site-card">
+          <img src="thumbs/omadesparagogon.png" alt="omadesparagogon.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://omadesparagogon.gr/" target="_blank">
+              <h4>omadesparagogon.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-card">
+          <img src="thumbs/deligate.png" alt="facebook.com/deligate.gr" class="site-thumb">
+          <div class="overlay">
+            <a href="https://www.facebook.com/deligate.gr" target="_blank">
+              <h4>deligate.gr</h4><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2 style="text-align:center;">ΕΠΙΚΟΙΝΩΝΙΑ</h2>
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=Samos,%20Greece&z=14&output=embed" width="100%" height="360" style="border:0;border-radius:12px;"></iframe>
+        </div>
+
+        <div style="margin-top:25px;">
+          <h3>Επικοινώνησε μαζί μου!</h3>
+          <p>Ας συνεργαστούμε σε έργα Επιστήμης Δεδομένων, Ανάλυσης ή Μηχανικής Μάθησης. Είμαι ανοιχτός σε επαγγελματικές αλλά και ερευνητικές ευκαιρίες.</p>
+          <ul style="line-height:1.8;">
+            <li><strong>Email:</strong> <a href="mailto:lef.diamantidis@gmail.com">lef.diamantidis@gmail.com</a></li>
+            <li><strong>Phone:</strong> (+30) 6977237393</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/eleftherios-diamantidis/" target="_blank">/in/eleftherios-diamantidis</a></li>
+            <li><strong>Location:</strong> Samos, Greece</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="page-footer">© Ελευθέριος Διαμαντίδης · 2025</div>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+    const sections = document.querySelectorAll(".section");
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        sections.forEach(s => s.classList.remove("active"));
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.target).classList.add("active");
+        document.querySelector(".content").scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  </script>
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    const savedTheme = localStorage.getItem("theme") || "light";
+
+    // Apply saved theme
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark");
+      toggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+
+    // Click to toggle
+    toggleBtn.addEventListener("click", () => {
+      const isDark = document.body.classList.toggle("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      toggleBtn.innerHTML = isDark
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
+    });
+  </script>
+  <script>
+    const langToggle = document.getElementById("lang-toggle");
+    const flagIcon = document.getElementById("flag-icon");
+    const currentLang = localStorage.getItem("lang") || "en";
+
+    function setLanguage(lang) {
+      localStorage.setItem("lang", lang);
+      if (lang === "gr") {
+        window.location.href = "index_gr.html";
+      } else {
+        window.location.href = "index.html";
+      }
+    }
+
+    // Set flag initially
+    flagIcon.src = currentLang === "gr"
+      ? "https://flagcdn.com/w20/gr.png"
+      : "https://flagcdn.com/w20/gb.png";
+
+    // Switch flags on click
+    langToggle.addEventListener("click", () => {
+      const newLang = currentLang === "en" ? "gr" : "en";
+      setLanguage(newLang);
+    });
+  </script>
+</body>
+</html>
